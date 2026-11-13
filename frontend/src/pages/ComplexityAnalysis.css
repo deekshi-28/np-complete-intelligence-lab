@@ -1,0 +1,547 @@
+.complexity-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  color: var(--text-primary, #e5e7eb);
+  background: var(--background, #0b1120);
+}
+
+.complexity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.complexity-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  margin-bottom: 22px;
+  color: #94a3b8;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.complexity-back-button:hover {
+  color: #38bdf8;
+}
+
+.complexity-title-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.complexity-title-icon,
+.complexity-section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 12px;
+}
+
+.complexity-title-row h1 {
+  margin: 0 0 6px;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.8px;
+}
+
+.complexity-title-row p,
+.complexity-section-heading p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.complexity-header-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  color: #7dd3fc;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 20px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.complexity-info-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 17px;
+  margin-bottom: 32px;
+  color: #bae6fd;
+  background: rgba(14, 165, 233, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  border-radius: 10px;
+}
+
+.complexity-info-banner svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.complexity-info-banner p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.complexity-section {
+  margin-bottom: 35px;
+}
+
+.complexity-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 17px;
+}
+
+.complexity-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  color: #38bdf8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.complexity-section-heading h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.complexity-section-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.complexity-card,
+.complexity-detail-card {
+  padding: 22px;
+  background: #111c2e;
+  border: 1px solid #263449;
+  border-radius: 13px;
+}
+
+.complexity-chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.complexity-legend-item,
+.complexity-growth-result-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #cbd5e1;
+  font-size: 12px;
+}
+
+.complexity-legend-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.complexity-chart-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.complexity-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 190px;
+  overflow: visible;
+}
+
+.complexity-grid-line {
+  stroke: #334155;
+  stroke-width: 1;
+  stroke-dasharray: 4 5;
+}
+
+.complexity-axis-label {
+  fill: #94a3b8;
+  font-size: 11px;
+}
+
+.complexity-chart-line {
+  vector-effect: non-scaling-stroke;
+}
+
+.complexity-chart-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.complexity-algorithm-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.complexity-algorithm-card {
+  padding: 19px;
+  text-align: left;
+  color: #e2e8f0;
+  background: #111c2e;
+  border: 1px solid #263449;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background 0.2s,
+    transform 0.2s;
+}
+
+.complexity-algorithm-card:hover {
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+}
+
+.complexity-algorithm-card.selected {
+  background: rgba(30, 64, 105, 0.35);
+  border-color: #38bdf8;
+}
+
+.complexity-algorithm-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.complexity-algorithm-name {
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.complexity-class {
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 650;
+}
+
+.complexity-class.factorial {
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.12);
+}
+
+.complexity-class.exponential {
+  color: #fdba74;
+  background: rgba(249, 115, 22, 0.12);
+}
+
+.complexity-algorithm-card > p {
+  min-height: 38px;
+  margin: 12px 0 18px;
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.complexity-card-complexity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid #263449;
+}
+
+.complexity-card-complexity span {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.complexity-card-complexity strong {
+  color: #fca5a5;
+  font-size: 14px;
+}
+
+.complexity-card-link {
+  color: #38bdf8;
+  font-size: 11px;
+}
+
+.complexity-detail-card {
+  margin-top: 16px;
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.complexity-detail-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.complexity-detail-heading > svg {
+  color: #38bdf8;
+}
+
+.complexity-detail-heading h3 {
+  margin: 0 0 7px;
+  font-size: 18px;
+}
+
+.complexity-detail-heading p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.complexity-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.complexity-detail-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 14px;
+  background: #0b1525;
+  border: 1px solid #263449;
+  border-radius: 9px;
+}
+
+.complexity-detail-grid span {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.complexity-detail-grid strong {
+  color: #7dd3fc;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+
+.complexity-detail-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 17px;
+  padding: 12px;
+  color: #cbd5e1;
+  background: rgba(56, 189, 248, 0.07);
+  border-radius: 8px;
+}
+
+.complexity-detail-note svg {
+  flex-shrink: 0;
+  color: #38bdf8;
+}
+
+.complexity-detail-note p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.complexity-slider-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.complexity-slider-heading label {
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.complexity-slider-heading strong {
+  min-width: 42px;
+  padding: 7px 12px;
+  color: #7dd3fc;
+  text-align: center;
+  background: rgba(56, 189, 248, 0.12);
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.complexity-slider {
+  width: 100%;
+  accent-color: #38bdf8;
+  cursor: pointer;
+}
+
+.complexity-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+  color: #64748b;
+  font-size: 10px;
+}
+
+.complexity-growth-results {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 11px;
+  margin-top: 25px;
+}
+
+.complexity-growth-result {
+  min-width: 0;
+  padding: 14px;
+  background: #0b1525;
+  border: 1px solid #263449;
+  border-radius: 9px;
+}
+
+.complexity-growth-result strong {
+  display: block;
+  margin: 13px 0 5px;
+  color: #f1f5f9;
+  font-size: 17px;
+  overflow-wrap: anywhere;
+}
+
+.complexity-growth-result small {
+  color: #64748b;
+  font-size: 10px;
+}
+
+.complexity-simulator-footnote {
+  margin: 18px 0 0;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.complexity-scalability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.complexity-scale-item {
+  padding: 19px;
+  background: #111c2e;
+  border: 1px solid #263449;
+  border-top: 3px solid #38bdf8;
+  border-radius: 10px;
+}
+
+.complexity-scale-item.scale-exponential {
+  border-top-color: #fb923c;
+}
+
+.complexity-scale-item.scale-factorial {
+  border-top-color: #f87171;
+}
+
+.complexity-scale-item > span {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.complexity-scale-item h3 {
+  margin: 12px 0;
+  color: #e2e8f0;
+  font-size: 18px;
+}
+
+.complexity-scale-item p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.complexity-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0 5px;
+  margin-top: 20px;
+  color: #64748b;
+  border-top: 1px solid #263449;
+  font-size: 11px;
+}
+
+@media (max-width: 900px) {
+  .complexity-growth-results {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .complexity-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .complexity-scalability-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .complexity-page {
+    padding: 18px;
+  }
+
+  .complexity-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .complexity-header-tag {
+    margin-left: 0;
+  }
+
+  .complexity-algorithm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .complexity-growth-results {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .complexity-chart-legend {
+    gap: 12px;
+  }
+
+  .complexity-detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .complexity-footer {
+    flex-direction: column;
+  }
+}

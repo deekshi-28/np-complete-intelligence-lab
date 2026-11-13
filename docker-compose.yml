@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: np-intelligence-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: np_intelligence_lab
+      POSTGRES_USER: np_lab_user
+      POSTGRES_PASSWORD: np_lab_local_password
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - np_intelligence_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U np_lab_user -d np_intelligence_lab"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  np_intelligence_data:

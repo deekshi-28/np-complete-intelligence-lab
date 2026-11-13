@@ -1,0 +1,107 @@
+# ==========================================
+# PYTHON
+# ==========================================
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python package/build files
+*.egg-info/
+.eggs/
+build/
+dist/
+wheels/
+pip-wheel-metadata/
+
+# Python testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ==========================================
+# FASTAPI / APPLICATION
+# ==========================================
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# ==========================================
+# REACT / NODE.JS / VITE
+# ==========================================
+
+# Dependencies
+node_modules/
+
+# Build output and caches
+dist/
+.vite/
+.parcel-cache/
+.next/
+.nuxt/
+
+# ==========================================
+# DATABASE
+# ==========================================
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps and backups
+*.dump
+*.sql.gz
+*.bak
+
+# ==========================================
+# GENERATED FILES
+# ==========================================
+
+# Generated reports
+reports/generated/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Archives
+*.zip
+
+# ==========================================
+# IDE / EDITORS
+# ==========================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# OPERATING SYSTEM
+# ==========================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# JUPYTER
+# ==========================================
+.ipynb_checkpoints/
