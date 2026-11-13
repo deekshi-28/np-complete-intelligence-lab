@@ -27,7 +27,7 @@ The system uses **backtracking** to solve four selected problems and provides vi
 - Support for limiting the number of solutions and recorded events.
 
 ### Algorithms Library
-![Algorithms Library](frontend/screenshots/algorithms-library.jpeg)
+![Algorithms Library](screenshots/algorithms-library.jpeg)
 
 ### 2. Problem Library
 Provides information about the supported problems, including:
