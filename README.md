@@ -26,6 +26,9 @@ The system uses **backtracking** to solve four selected problems and provides vi
 - Execution timeline with recorded algorithm events.
 - Support for limiting the number of solutions and recorded events.
 
+### Algorithms Library
+![Algorithms Library](C:\Users\deek\Documents\project\np-complete-intelligence-lab\screenshots\algorithms-library.jpeg)
+
 ### 2. Problem Library
 Provides information about the supported problems, including:
 - Problem descriptions.
