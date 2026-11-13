@@ -26,8 +26,8 @@ The system uses **backtracking** to solve four selected problems and provides vi
 - Execution timeline with recorded algorithm events.
 - Support for limiting the number of solutions and recorded events.
 
-### Algorithms Library
-![Algorithms Library](screenshots/algorithms-library.jpeg)
+**Dashboard**
+![Dashboard](screenshots\dashboard.jpeg)
 
 ### 2. Problem Library
 Provides information about the supported problems, including:
@@ -36,12 +36,19 @@ Provides information about the supported problems, including:
 - Algorithmic techniques.
 - Complexity classifications.
 
+**Algorithms Library**
+![Algorithms Library](screenshots/algorithms-library.jpeg)
+
 ### 3. Complexity Analysis
 - Best-case, average-case, and worst-case time complexity.
 - Auxiliary space complexity.
 - Growth-function representation.
 - Complexity classification.
 - Theoretical analysis of algorithm behavior.
+
+**Complexity Analysis**
+![Complexity Analysis](screenshots\complexity-analysis.jpeg)
+![Complexity Analysis](screenshots\complexity-analysis2.jpeg)
 
 ### 4. Execution Analytics
 Analyzes algorithm execution using metrics such as:
@@ -57,6 +64,11 @@ Analyzes algorithm execution using metrics such as:
 - Maximum search depth.
 - Execution event distribution.
 
+**Execution Analytics**
+![Execution Analytics](screenshots\execution_analytics.jpeg)
+![Execution Analytics](screenshots\execution_analytics2.jpeg)
+![Execution Analytics](screenshots\execution_analytics3.jpeg)
+
 ### 5. Benchmarking Lab
 - Executes algorithms across multiple input sizes.
 - Supports repeated benchmark measurements.
@@ -64,6 +76,10 @@ Analyzes algorithm execution using metrics such as:
 - Calculates average, minimum, maximum, and standard deviation.
 - Analyzes empirical scaling behavior.
 - Compares execution metrics across input sizes.
+
+**Benchmarking Lab**
+![Benchmarking Lab](screenshots\benchmarking-lab.jpeg)
+![Benchmarking Lab](screenshots\benchmarks-results.jpeg)
 
 **Note:** Empirical benchmark measurements describe the tested instances and execution environment. They do not independently prove theoretical asymptotic complexity.
 
@@ -88,12 +104,22 @@ Constraints:
 - No two queens in the same column.
 - No two queens on the same diagonal.
 
+**N-Queens Workspace**
+![N-Queens Workspace](screenshots\n-queens-workspace.jpeg)
+**State-Space Tree**
+![N-Queens Workspace](screenshots\n-queens_state-space-tree.jpeg)
+
 ### 2. Graph Coloring Problem
 Assigns colors to graph vertices so that no two adjacent vertices share the same color.
 
 Constraints:
 - Every vertex receives one color.
 - Adjacent vertices must have different colors.
+
+**Graph Coloring Workspace**
+![Graph Coloring Workspace](screenshots\graph-coloring.jpeg)
+**State-Space Tree**
+![Graph Coloring Workspace](screenshots\graph-coloring_state-space-tree.jpeg)
 
 ### 3. Subset Sum Problem
 Determines whether a subset of the given integers can produce a specified target sum.
@@ -102,6 +128,11 @@ Constraints:
 - Each input element can be selected at most once.
 - Selected elements must sum to the target.
 
+**Subset Sum Workspace**
+![Subset Sum Workspace](screenshots\subset-sum.jpeg)
+**State-Space Tree**
+![Subset Sum Workspace](screenshots\subset-sum_state-space-tree.jpeg)
+
 ### 4. Hamiltonian Cycle Problem
 Determines whether an undirected graph contains a cycle that visits every vertex exactly once.
 
@@ -109,6 +140,11 @@ Constraints:
 - Every vertex must be visited exactly once.
 - Consecutive vertices must be connected by an edge.
 - The final vertex must connect back to the starting vertex.
+
+**Hamiltonian Cycle Workspace**
+![Hamiltonian Cycle Workspace](screenshots\hamiltonian-cycle.jpeg)
+**State-Space Tree**
+![Hamiltonian Cycle Workspace](screenshots\hamiltonian-cycle_state-space-tree.jpeg)
 
 **Classification note:** N-Queens is included as a backtracking search problem for algorithmic comparison. It is not classified as an NP-Complete problem in this formulation.
 
@@ -162,6 +198,10 @@ The application follows a frontend-backend architecture.
                     v
              POSTGRESQL DATABASE
 ```
+
+**System Architecture**
+
+![NP-Complete Intelligence Lab System Architecture](screenshots\system-architecture.png)
 
 The frontend communicates with the backend through REST API endpoints. The backend handles algorithm execution, complexity analysis, benchmarking, and associated processing.
 
@@ -420,8 +460,7 @@ Potential improvements include:
 **Project:** NP-Complete Intelligence Lab
 
 **Domain:** Design and Analysis of Algorithms (DAA)
+
 **Focus Areas:** Backtracking, Computational Complexity, Algorithm Visualization, Execution Analytics, and Performance Benchmarking.
 
 ---
-
-*Developed as an academic project to explore algorithmic problem-solving, computational complexity, and the practical behavior of backtracking algorithms.*
