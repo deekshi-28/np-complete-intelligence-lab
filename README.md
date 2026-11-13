@@ -27,7 +27,7 @@ The system uses **backtracking** to solve four selected problems and provides vi
 - Support for limiting the number of solutions and recorded events.
 
 **Dashboard**
-![Dashboard](screenshots\dashboard.jpeg)
+![Dashboard](screenshots/dashboard.jpeg)
 
 ### 2. Problem Library
 Provides information about the supported problems, including:
@@ -47,8 +47,8 @@ Provides information about the supported problems, including:
 - Theoretical analysis of algorithm behavior.
 
 **Complexity Analysis**
-![Complexity Analysis](screenshots\complexity-analysis.jpeg)
-![Complexity Analysis](screenshots\complexity-analysis2.jpeg)
+![Complexity Analysis](screenshots/complexity-analysis.jpeg)
+![Complexity Analysis](screenshots/complexity-analysis2.jpeg)
 
 ### 4. Execution Analytics
 Analyzes algorithm execution using metrics such as:
@@ -65,9 +65,9 @@ Analyzes algorithm execution using metrics such as:
 - Execution event distribution.
 
 **Execution Analytics**
-![Execution Analytics](screenshots\execution_analytics.jpeg)
-![Execution Analytics](screenshots\execution_analytics2.jpeg)
-![Execution Analytics](screenshots\execution_analytics3.jpeg)
+![Execution Analytics](screenshots/execution_analytics.jpeg)
+![Execution Analytics](screenshots/execution_analytics2.jpeg)
+![Execution Analytics](screenshots/execution_analytics3.jpeg)
 
 ### 5. Benchmarking Lab
 - Executes algorithms across multiple input sizes.
@@ -78,8 +78,8 @@ Analyzes algorithm execution using metrics such as:
 - Compares execution metrics across input sizes.
 
 **Benchmarking Lab**
-![Benchmarking Lab](screenshots\benchmarking-lab.jpeg)
-![Benchmarking Lab](screenshots\benchmarks-results.jpeg)
+![Benchmarking Lab](screenshots/benchmarking-lab.jpeg)
+![Benchmarking Lab](screenshots/benchmarks-results.jpeg)
 
 **Note:** Empirical benchmark measurements describe the tested instances and execution environment. They do not independently prove theoretical asymptotic complexity.
 
@@ -105,9 +105,9 @@ Constraints:
 - No two queens on the same diagonal.
 
 **N-Queens Workspace**
-![N-Queens Workspace](screenshots\n-queens-workspace.jpeg)
+![N-Queens Workspace](screenshots/n-queens-workspace.jpeg)
 **State-Space Tree**
-![N-Queens Workspace](screenshots\n-queens_state-space-tree.jpeg)
+![N-Queens Workspace](screenshots/n-queens_state-space-tree.jpeg)
 
 ### 2. Graph Coloring Problem
 Assigns colors to graph vertices so that no two adjacent vertices share the same color.
@@ -117,9 +117,9 @@ Constraints:
 - Adjacent vertices must have different colors.
 
 **Graph Coloring Workspace**
-![Graph Coloring Workspace](screenshots\graph-coloring.jpeg)
+![Graph Coloring Workspace](screenshots/graph-coloring.jpeg)
 **State-Space Tree**
-![Graph Coloring Workspace](screenshots\graph-coloring_state-space-tree.jpeg)
+![Graph Coloring Workspace](screenshots/graph-coloring_state-space-tree.jpeg)
 
 ### 3. Subset Sum Problem
 Determines whether a subset of the given integers can produce a specified target sum.
@@ -129,9 +129,9 @@ Constraints:
 - Selected elements must sum to the target.
 
 **Subset Sum Workspace**
-![Subset Sum Workspace](screenshots\subset-sum.jpeg)
+![Subset Sum Workspace](screenshots/subset-sum.jpeg)
 **State-Space Tree**
-![Subset Sum Workspace](screenshots\subset-sum_state-space-tree.jpeg)
+![Subset Sum Workspace](screenshots/subset-sum_state-space-tree.jpeg)
 
 ### 4. Hamiltonian Cycle Problem
 Determines whether an undirected graph contains a cycle that visits every vertex exactly once.
@@ -142,9 +142,9 @@ Constraints:
 - The final vertex must connect back to the starting vertex.
 
 **Hamiltonian Cycle Workspace**
-![Hamiltonian Cycle Workspace](screenshots\hamiltonian-cycle.jpeg)
+![Hamiltonian Cycle Workspace](screenshots/hamiltonian-cycle.jpeg)
 **State-Space Tree**
-![Hamiltonian Cycle Workspace](screenshots\hamiltonian-cycle_state-space-tree.jpeg)
+![Hamiltonian Cycle Workspace](screenshots/hamiltonian-cycle_state-space-tree.jpeg)
 
 **Classification note:** N-Queens is included as a backtracking search problem for algorithmic comparison. It is not classified as an NP-Complete problem in this formulation.
 
@@ -201,7 +201,7 @@ The application follows a frontend-backend architecture.
 
 **System Architecture**
 
-![NP-Complete Intelligence Lab System Architecture](screenshots\system-architecture.png)
+![NP-Complete Intelligence Lab System Architecture](screenshots/system-architecture.png)
 
 The frontend communicates with the backend through REST API endpoints. The backend handles algorithm execution, complexity analysis, benchmarking, and associated processing.
 
