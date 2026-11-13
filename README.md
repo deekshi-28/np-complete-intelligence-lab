@@ -199,8 +199,6 @@ The application follows a frontend-backend architecture.
              POSTGRESQL DATABASE
 ```
 
-**System Architecture**
-
 ![NP-Complete Intelligence Lab System Architecture](screenshots/system-architecture.png)
 
 The frontend communicates with the backend through REST API endpoints. The backend handles algorithm execution, complexity analysis, benchmarking, and associated processing.
